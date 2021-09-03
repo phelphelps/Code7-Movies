@@ -1,0 +1,39 @@
+@import "../../../../color-theme.scss";
+
+.navbar-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  span {
+    text-align: center;
+  }
+  cursor: pointer;
+}
+
+.activeItem {
+  background-color: $primary;
+}
+
+@media screen and (min-width: 738px) {
+  .navbar-icon-container {
+    height: 100px;
+    margin: 8px;
+  }
+}
+
+@media screen and (max-width: 738px) {
+  .navbar-icon-container {
+    width: 50px;
+    height: 40px;
+    margin: 4px 8px;
+    span {
+      text-align: center;
+    }
+  }
+
+  .item-name {
+    display: none;
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../../../color-theme.scss";
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 140px;
+  padding: 8px;
+  background-color: $surface;
+  border-radius: 4px;
+  margin-bottom: 12px;
+
+  img.movie-poster {
+    height: 240px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .movie-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+
+    .movie-title {
+      font-weight: bold;
+    }
+
+    .movie-genre {
+      margin-top: 2px;
+      font-weight: 200;
+    }
+  }
+}
+
+@media screen and (min-width: 738px) {
+  .card-container {
+    width: 220px;
+
+    img.movie-poster {
+      height: 320px;
+    }
+  }
+}

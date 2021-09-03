@@ -1,0 +1,8 @@
+<div class="navbar-container">
+  <app-navbar-item
+    *ngFor="let item of navbarItems"
+    [name]="item?.name"
+    [isActiveNow]="item?.isActiveNow"
+    [icon]="item?.icon"
+  ></app-navbar-item>
+</div>

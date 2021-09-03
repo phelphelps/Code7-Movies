@@ -1,0 +1,37 @@
+@import "../../../../color-theme.scss";
+
+.card-container {
+  display: flex;
+  position: relative;
+
+  img {
+    width: 100%;
+    border-radius: 10px;
+    height: 35vh;
+    object-fit: cover;
+  }
+
+  .movie-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    position: absolute;
+    bottom: 0;
+    margin: 0 16px;
+
+    .status-container {
+      display: flex;
+      background-color: $warn;
+      height: 40px;
+      padding: 0 8px;
+      border-radius: 40px;
+      align-items: center;
+
+      .status-name {
+        margin-left: 8px;
+      }
+    }
+  }
+}
