@@ -1,7 +1,7 @@
 .page-content {
   justify-content: center;
   height: 100vh;
-  margin-bottom: 500px;
+  margin-bottom: 450px;
 }
 
 app-navbar {
@@ -11,7 +11,7 @@ app-navbar {
   left: 0;
 }
 
-@media screen and (max-width: 738px) {
+@media screen and (max-width: 780px) {
   app-navbar {
     top: auto;
     left: auto;
@@ -20,7 +20,7 @@ app-navbar {
   }
 }
 
-@media screen and (min-width: 738px) {
+@media screen and (min-width: 780px) {
   .page-content {
     margin: 0 100px 0 200px;
   }

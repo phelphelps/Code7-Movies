@@ -57,7 +57,7 @@
   }
 }
 
-@media screen and (max-width: 738px) {
+@media screen and (max-width: 780px) {
   .movie-detail-container {
     grid-template-columns: auto;
     grid-template-rows: 1fr auto auto;
@@ -67,10 +67,15 @@
       "info info";
     height: auto;
   }
+
   .movie-poster {
     width: 230px;
     height: 330px;
     object-fit: cover;
     grid-area: poster;
+  }
+
+  .movie-info-container {
+    flex-direction: column !important;
   }
 }
