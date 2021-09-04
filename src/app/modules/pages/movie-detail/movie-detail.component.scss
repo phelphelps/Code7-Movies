@@ -16,11 +16,16 @@
   height: 90vh;
   place-content: center;
 
-  .movie-poster {
-    width: 330px;
-    height: 430px;
-    object-fit: cover;
+  .movie-poster-container {
     grid-area: poster;
+    display: flex;
+    justify-content: center;
+
+    .movie-poster {
+      width: 330px;
+      height: 430px;
+      object-fit: cover;
+    }
   }
 
   .movie-description-container {
@@ -60,5 +65,12 @@
       "poster poster"
       "description description"
       "info info";
+    height: auto;
+  }
+  .movie-poster {
+    width: 230px;
+    height: 330px;
+    object-fit: cover;
+    grid-area: poster;
   }
 }

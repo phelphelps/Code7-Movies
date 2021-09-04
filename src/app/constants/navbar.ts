@@ -1,5 +1,10 @@
 export const navbarConfig = [
-  { name: 'Home', isActiveNow: false, route: '', icon: 'home' },
-  { name: 'Home', isActiveNow: true, route: 'e', icon: 'search' },
-  { name: 'Home', isActiveNow: false, route: 'w', icon: 'star' },
+  { name: 'Home', isActiveNow: false, route: '/', icon: 'home' },
+  {
+    name: 'Search',
+    isActiveNow: false,
+    route: '/pesquisar',
+    icon: 'search',
+  },
+  { name: 'Favorites', isActiveNow: false, route: '/favoritos', icon: 'star' },
 ];

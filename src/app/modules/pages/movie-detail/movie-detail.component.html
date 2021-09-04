@@ -1,5 +1,7 @@
 <div class="movie-detail-container fast-fade-in">
-  <img class="movie-poster" [src]="movieInfo?.poster" />
+  <div class="movie-poster-container">
+    <img class="movie-poster" [src]="movieInfo?.poster" />
+  </div>
   <div class="movie-description-container">
     <h2>{{ movieInfo?.title }}</h2>
     <span class="movie-sinopsis">{{ movieInfo.description }}</span>
