@@ -1,9 +1,13 @@
 <div class="card-container" (click)="openDetails()">
   <div class="movie-poster">
-    <img [src]="moviePoster" />
+    <img [src]="moviePoster" (load)="setImageAsLoaded()" />
+    <img *ngIf="!imageLoaded" [src]="loaderSVG" class="loader" />
   </div>
+
   <div class="movie-info">
     <span class="movie-title">{{ movieTitle }}</span>
     <span class="movie-genre">{{ movieGenre }}</span>
   </div>
 </div>
+
+<ng-template #imageLoading> </ng-template>

@@ -3,14 +3,21 @@
 .card-container {
   display: flex;
   flex-direction: column;
-  width: 140px;
+  width: 160px;
   cursor: pointer;
   background-color: $surface;
   border-radius: 4px;
-  margin-bottom: 12px;
+  margin: 10px;
+
+  .loader {
+    position: absolute;
+  }
 
   .movie-poster {
+    display: flex;
+    position: relative;
     width: 100%;
+    height: 240px;
     overflow: hidden;
 
     img {
@@ -39,9 +46,9 @@
 
 @media screen and (min-width: 738px) {
   .card-container {
-    width: 280px;
+    width: 260px;
 
-    img.movie-poster {
+    .movie-poster {
       height: 380px;
     }
   }
