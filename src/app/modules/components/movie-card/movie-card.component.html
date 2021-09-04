@@ -1,5 +1,7 @@
-<div class="card-container">
-  <img [src]="moviePoster" class="movie-poster" />
+<div class="card-container" (click)="openDetails()">
+  <div class="movie-poster">
+    <img [src]="moviePoster" />
+  </div>
   <div class="movie-info">
     <span class="movie-title">{{ movieTitle }}</span>
     <span class="movie-genre">{{ movieGenre }}</span>

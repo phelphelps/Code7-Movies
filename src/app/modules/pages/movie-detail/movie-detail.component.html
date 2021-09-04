@@ -1,0 +1,22 @@
+<div class="movie-detail-container fast-fade-in">
+  <img class="movie-poster" [src]="movieInfo?.poster" />
+  <div class="movie-description-container">
+    <h2>{{ movieInfo?.title }}</h2>
+    <span class="movie-sinopsis">{{ movieInfo.description }}</span>
+  </div>
+  <div class="movie-info-container">
+    <div>
+      <span class="info-tag">Director: </span>
+      <span>{{ movieInfo?.director }}</span>
+    </div>
+    <div>
+      <span class="info-tag">Genre(s): </span>
+      <span>{{ movieInfo?.genre }}</span>
+    </div>
+    <div>
+      <span class="info-tag">Year: </span>
+      <span>{{ movieInfo?.year }}</span>
+    </div>
+  </div>
+  <div class="empty-container"></div>
+</div>

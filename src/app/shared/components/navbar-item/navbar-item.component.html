@@ -1,4 +1,8 @@
-<div class="navbar-icon-container" [ngClass]="{ activeItem: isActiveNow }">
+<div
+  class="navbar-icon-container"
+  [ngClass]="{ activeItem: isActiveNow }"
+  (click)="itemSelected(route)"
+>
   <i class="material-icons item-icon">{{ icon }}</i>
   <span class="item-name">{{ name }}</span>
 </div>

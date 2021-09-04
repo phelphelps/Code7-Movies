@@ -1,14 +1,23 @@
 @import "../../../../color-theme.scss";
+@import "../../../../animations.scss";
 
 .card-container {
   display: flex;
   position: relative;
+  overflow: hidden;
 
   img {
     width: 100%;
     border-radius: 10px;
-    height: 35vh;
+    height: 45vh;
     object-fit: cover;
+    object-position: top;
+    transition: transform 1.5s;
+
+    &:hover {
+      transform: scale(1.1);
+      transform-origin: 50% 50%;
+    }
   }
 
   .movie-info {
@@ -16,21 +25,50 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
+    width: 100%;
+    height: 130px;
     position: absolute;
     bottom: 0;
-    margin: 0 16px;
+    padding: 0 16px;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.7595413165266106) 0%,
+      rgba(0, 0, 0, 0.5942752100840336) 26%,
+      rgba(0, 0, 0, 0.44021358543417366) 47%,
+      rgba(0, 0, 0, 0.23573179271708689) 75%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+    .movie-description {
+      margin: 20px 0;
+
+      .movie-synopsis {
+        font-size: 20px;
+      }
+    }
 
     .status-container {
       display: flex;
       background-color: $warn;
       height: 40px;
       padding: 0 8px;
+      margin: 0 40px;
       border-radius: 40px;
       align-items: center;
 
       .status-name {
         margin-left: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 738px) {
+  .card-container {
+    .movie-info {
+      height: 80px;
+      .movie-synopsis {
+        display: none;
       }
     }
   }

@@ -16,6 +16,11 @@
   background-color: $primary;
 }
 
+.item-icon {
+  font-size: 28px;
+  margin: 8px;
+}
+
 @media screen and (min-width: 738px) {
   .navbar-icon-container {
     height: 100px;

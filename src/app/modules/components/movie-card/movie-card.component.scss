@@ -4,21 +4,27 @@
   display: flex;
   flex-direction: column;
   width: 140px;
-  padding: 8px;
+  cursor: pointer;
   background-color: $surface;
   border-radius: 4px;
   margin-bottom: 12px;
 
-  img.movie-poster {
-    height: 240px;
+  .movie-poster {
     width: 100%;
-    object-fit: contain;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 
   .movie-info {
     display: flex;
     flex-direction: column;
     margin-top: 12px;
+    padding: 8px;
 
     .movie-title {
       font-weight: bold;
@@ -33,10 +39,10 @@
 
 @media screen and (min-width: 738px) {
   .card-container {
-    width: 220px;
+    width: 280px;
 
     img.movie-poster {
-      height: 320px;
+      height: 380px;
     }
   }
 }

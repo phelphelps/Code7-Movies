@@ -1,9 +1,12 @@
 <div class="card-container">
-  <img [src]="image" />
+  <img [src]="image" class="fade-in" />
   <div class="movie-info">
-    <h3>{{ title }}</h3>
+    <div class="movie-description">
+      <h2>{{ title }}</h2>
+      <span class="movie-synopsis">{{ movieSynopsis }}</span>
+    </div>
     <div class="status-container">
-      <i class="material-icons item-icon">home</i>
+      <i class="material-icons item-icon">whatshot</i>
       <span class="status-name">Em alta</span>
     </div>
   </div>

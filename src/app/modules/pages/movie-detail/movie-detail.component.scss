@@ -1,0 +1,64 @@
+@import "../../../../color-theme.scss";
+@import "../../../../animations.scss";
+
+* {
+  border-radius: 4px;
+}
+.movie-detail-container {
+  color: #000000;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "poster description"
+    "info info";
+  height: 90vh;
+  place-content: center;
+
+  .movie-poster {
+    width: 330px;
+    height: 430px;
+    object-fit: cover;
+    grid-area: poster;
+  }
+
+  .movie-description-container {
+    grid-area: description;
+    padding: 16px;
+    background-color: $primary;
+
+    .movie-sinopsis {
+      font-size: 20px;
+    }
+  }
+
+  .movie-info-container {
+    grid-area: info;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 16px;
+    background-color: #ffffff;
+
+    .info-tag {
+      font-weight: bold;
+    }
+  }
+
+  .empty-container {
+    grid-area: empty;
+  }
+}
+
+@media screen and (max-width: 738px) {
+  .movie-detail-container {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr auto auto;
+    grid-template-areas:
+      "poster poster"
+      "description description"
+      "info info";
+  }
+}

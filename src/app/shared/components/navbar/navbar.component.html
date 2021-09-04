@@ -4,5 +4,7 @@
     [name]="item?.name"
     [isActiveNow]="item?.isActiveNow"
     [icon]="item?.icon"
+    [route]="item?.route"
+    (itemSelectedEvent)="openPage($event)"
   ></app-navbar-item>
 </div>
